@@ -1,0 +1,298 @@
+body{
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    background-color: white;
+    color: white;
+}
+.marca  {
+    display: flex;
+    position: absolute;
+    z-index: +1;
+    left: 25px;
+    top: 15px;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-style: italic;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black ;
+}
+header{
+    display: flex;   
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #F0F0F0;
+
+}
+header  div {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+header a{    
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+header .redes {
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    list-style: none;  
+    font-family: 'WindSong', cursive;
+    color: black;
+}
+header .redes i{
+    color: black;
+    font-size: 2.3rem;  
+}
+header .redes i:hover{
+    color: white;
+}
+header li{
+    padding: 0 0.8rem; 
+    list-style: none; 
+}
+header nav ul {
+    display: flex;
+}
+
+a:hover{
+    color: #de1986;
+}
+a svg:hover {
+    color: white;
+}
+.seguinos{
+    font-size: 35px;
+}
+.menucolecciones{
+    color: #de1986;
+}
+.separador  {
+    width: 100%;
+    height: 3vh;
+    background-color: white;
+    font-family: 'WindSong', cursive;
+    color: black;
+    font-size: 30px;
+    display: flex;
+}
+.separador p {
+    position: relative;
+    left: 7%;
+    top: 9%;
+}
+#grilla {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+    grid-template-rows: 2fr 13fr;
+    color: black;
+    grid-row-gap: 2vh;
+    grid-template-areas:
+    "mensaje mensaje mensaje mensaje"
+    "texto1 nuevo1 texto2 nuevo2" ;
+}
+#mensaje {
+    grid-area: mensaje;
+    background-color: #E97FBA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 70px;
+}
+#texto1 {
+    grid-area: texto1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F0F0F0;
+    color: #de1986;
+}
+#nuevo1 {
+    grid-area: nuevo1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F0F0F0;
+}
+#texto2 {
+    grid-area: texto2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #de1986;
+}
+#nuevo2 {
+    grid-area: nuevo2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.compraroferta {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.compraroferta p {
+    font-size: 1.5rem;
+    color: black;
+}
+.compraroferta h2 {
+    font-weight: 600;
+}
+footer {
+    height: 30vh;
+    background-color: #D00B78;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
+}
+.newsletter {
+    flex-basis: 40%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.newsletter h2  p {
+    flex-basis: 100%;
+}
+.contacto {
+    flex-basis: 45%;
+}
+.contacto form{
+   display: grid;
+   grid-template-rows: 2rem 2rem 2rem;
+   grid-template-columns: auto auto;
+   align-content: center;   
+   grid-gap:1rem
+} 
+.contacto #nombre {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+.contacto #emailContacto{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+.contacto textarea{
+    grid-row: 1/4;
+    grid-column: 2/3;
+}
+.contacto button {  
+    grid-row: 3/4;
+    grid-column: 1/2;
+    justify-self: start;
+    width: 100px;
+}
+.boton{
+    padding: 0.4rem;
+    background-color: #FFFFFF;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+.boton:hover{
+    border-color: white;  
+    color: white;  
+    background-color: black;
+}
+.boton2 {
+    border: none;
+    background-color: transparent;
+    margin-left: 25px;
+}
+.boton2:hover {
+    color: white;
+}
+/*---------------Estilos colecciones---------------*/
+.productos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40vh;
+
+}
+.tipoproducto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+    font-size: 25px;
+    border: solid black 1px;
+    background-color: #de1986;
+}
+/*------------------------Estilos Galería------------------------*/
+.banner {
+    height: 20vh;
+    background-color: rgb(138, 138, 138);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.banner__titulo {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 45px;
+}
+.banner__texto {
+    font-family: 'WindSong', cursive;
+    font-size: 25px;
+}
+.rollofotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+    height: 25vh;
+    background-color: rgb(255, 185, 243);
+}
+.rollofotos__imagen {
+    border-radius: 23px;
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+}
+.rollofotos__imagen:hover {
+    position: relative;
+    width: 600px;
+    height: auto;
+    display: block;
+    z-index: 99;
+}
+.centro {
+   margin-top: 10px;
+   display: flex;
+   justify-content: center;
+}
+.evento {
+    display: flex;
+    justify-content: center;
+
+}
+.evento__imagen {
+    width: 500px;
+}
+.evento__texto {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 180px;
+    font-family: 'Nanum Myeongjo', serif;
+    color: black;
+    width: 300px;
+    margin-left: 15px;
+    margin-top: 10px;
+}   
