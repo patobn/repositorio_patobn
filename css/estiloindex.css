@@ -233,6 +233,16 @@ footer {
     border: solid black 1px;
     background-color: #de1986;
 }
+
+.nuevosingresos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+    font-size: 28px;
+    background-color: black;
+    color: #de1986;
+}
 /*------------------------Estilos Galería------------------------*/
 .banner {
     height: 20vh;
